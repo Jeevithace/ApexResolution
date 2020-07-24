@@ -1030,6 +1030,7 @@ body dp-date-picker.dp-material .dp-picker-input {
     width: 300px;
     max-width: 100%;
     height: 40px;
-    background: url('./assets/images/calendar_icon.png') no-repeat;
+    background: url('./assets/images/calendar_icon.png');
     background-position: 97% 54%;
+    background-repeat: no-repeat;
 }
