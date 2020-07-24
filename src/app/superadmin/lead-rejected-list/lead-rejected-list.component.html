@@ -1,0 +1,285 @@
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark">
+        <i class="fas fa-bars"></i>
+    </a>
+    <app-sidebar></app-sidebar>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+        <app-header headerMainTitle="LEAD">
+        </app-header>
+        <div class="apexpage-titletop">
+            <div class="apxpage-title_wrap">
+                <h2>Rejected Lead</h2>
+            </div>
+        </div>
+        <div class="pagecontent_wrapper">
+            <div class="apex-white_wrap">
+                <div class="filterapx_wrap">
+                    <div class="filter_setting_forms">
+                        <h3>Filter By</h3>
+                        <div class="apxsilsetting_group">
+                            <label>Owner</label>
+                            <input type="text" value="Al Pacino">
+                        </div>
+                        <div class="apxsilsetting_group">
+                            <label>Email 1</label>
+                            <input type="text" value="samplemailid123@email.com ">
+                        </div>
+                        <div class="apxsilsetting_group">
+                            <label>Assigned to</label>
+                            <input type="text" value="All">
+                        </div>
+
+                    </div>
+                    <div class="filter_setting">
+                        <ul>
+                            <li data-toggle="modal" data-target="#filterby" class="filter_apx"><img src="../../../assets/images/filter.png" alt="filter"></li>
+                            <li class="setting_reset"><img src="../../../assets/images/setting_reset.png" alt="filter"></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="apxtable_grids_wrapper">
+                <div class="apxtable_grid_head">
+                    <div class="row">
+                        <div class="col-lg-12 lead-head">
+                            <h2>List of Leads</h2>
+                            <div class="apxtable_headbtn">
+                                <button class="btn-export-down"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.525 8.45391C16.116 8.05039 15.5746 7.82812 15 7.82812C14.4199 7.82812 13.8746 8.05391 13.4645 8.46445L12.1875 9.74102V2.1875C12.1875 0.98125 11.2062 0 10 0C8.79375 0 7.8125 0.98125 7.8125 2.1875V9.74102L6.55508 8.48359C6.14492 8.07344 5.575 7.83867 4.99062 7.83867H4.9832C4.39961 7.84062 3.85664 8.0668 3.45391 8.475C3.05039 8.88398 2.82812 9.42539 2.82812 10C2.82812 10.5801 3.05391 11.1254 3.46445 11.5355L8.7293 16.8008C9.07969 17.1512 9.53984 17.3262 10 17.3262C10.4602 17.3262 10.9203 17.1512 11.2707 16.8008L16.5164 11.5551C16.9281 11.1434 17.1633 10.5703 17.1613 9.9832C17.1594 9.39961 16.9332 8.85664 16.525 8.45391Z"
+                  fill="#9B59B6" />
+                <path
+                  d="M19.375 20H18.4375C18.0923 20 17.8125 19.7202 17.8125 19.375C17.8125 19.0298 18.0923 18.75 18.4375 18.75H19.375C19.7202 18.75 20 19.0298 20 19.375C20 19.7202 19.7202 20 19.375 20Z"
+                  fill="#9B59B6" />
+                <path
+                  d="M1.5625 20H0.625C0.279844 20 0 19.7202 0 19.375C0 19.0298 0.279844 18.75 0.625 18.75H1.5625C1.90766 18.75 2.1875 19.0298 2.1875 19.375C2.1875 19.7202 1.90766 20 1.5625 20Z"
+                  fill="#9B59B6" />
+                <path
+                  d="M16.25 20H3.75C3.40484 20 3.125 19.7202 3.125 19.375C3.125 19.0298 3.40484 18.75 3.75 18.75H16.25C16.5952 18.75 16.875 19.0298 16.875 19.375C16.875 19.7202 16.5952 20 16.25 20Z"
+                  fill="#9B59B6" />
+              </svg>
+              Download / Export</button>
+
+
+                            </div>
+                        </div>
+
+                        <div class="search_lead_grid col-lg-12">
+                            <div class="sidebar-search">
+                                <div>
+                                    <div class="input-group">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+                                        </div>
+                                        <input type="text" class="form-control search-menu" placeholder="Search by Name,Email...">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>Re-assign Selected Lead to</h2>
+                            <div class="apexinput-froms">
+                                <select name="" id="">
+                  <option value="">Broker</option>
+                  <option value="">Broker</option>
+                </select>
+                                <select name="" id="">
+                  <option value="">Broker Name</option>
+                  <option value="">Broker Name</option>
+                </select>
+                                <button class="btn_dblue">Assign</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="apxtable_grid_table">
+                    <div class="table-responsive apx-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" [(ngModel)]="masterSelected" name="list_name" value="m1" (change)="checkUncheckAll()" /> <strong></strong>
+                                    </th>
+                                    <th [class.active]="order === 'userid'" (click)="setOrder('userid')">#
+                                        <span [hidden]="reverse"><img src="../../../assets/images/sort.png"></span>
+                                        <span [hidden]="!reverse"><img src="../../../assets/images/sort.png"></span>
+                                    </th>
+                                    <th [class.active]="order === 'userid'" (click)="setOrder('userid')">Owner
+                                        <span [hidden]="reverse"><img src="../../../assets/images/sort.png"></span>
+                                        <span [hidden]="!reverse"><img src="../../../assets/images/sort.png"></span>
+                                    </th>
+                                    <th [class.active]="order === 'userid'" (click)="setOrder('userid')">Email
+                                        <span [hidden]="reverse"><img src="../../../assets/images/sort.png"></span>
+                                        <span [hidden]="!reverse"><img src="../../../assets/images/sort.png"></span>
+                                    </th>
+                                    <th [class.active]="order === 'userid'" (click)="setOrder('userid')">Owner Phone
+                                        <span [hidden]="reverse"><img src="../../../assets/images/sort.png"></span>
+                                        <span [hidden]="!reverse"><img src="../../../assets/images/sort.png"></span>
+                                    </th>
+                                    <th [class.active]="order === 'userid'" (click)="setOrder('userid')">Units
+                                        <span [hidden]="reverse"><img src="../../../assets/images/sort.png"></span>
+                                        <span [hidden]="!reverse"><img src="../../../assets/images/sort.png"></span></th>
+                                    <th [class.active]="order === 'userid'" (click)="setOrder('userid')">Reason <span [hidden]="reverse"><img src="../../../assets/images/sort.png"></span>
+                                        <span [hidden]="!reverse"><img src="../../../assets/images/sort.png"></span>
+                                    </th>
+
+                                    <th [class.active]="order === 'userid'" (click)="setOrder('userid')">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let leadlist of leadData | orderBy: order:reverse| paginate: { itemsPerPage: 6, currentPage: p } ">
+                                    <td>
+
+                                        <input type="checkbox" [(ngModel)]="leadlist.isSelected" name="list_name" value="{{leadlist.id}}" (change)="isAllSelected()" /> {{leadlist.value}}
+
+
+                                    </td>
+                                    <td>{{leadlist.leadid}}</td>
+                                    <td>{{leadlist.leadowner}}</td>
+                                    <td>{{leadlist.leademail}}</td>
+                                    <td>{{leadlist.leadphone}}</td>
+                                    <td>{{leadlist.leadunits}}</td>
+                                    <td>{{leadlist.leadreason}}</td>
+
+                                    <td>
+                                        <div class=" apx-actions ">
+                                            <span class="pencil "><i class="fas fa-pencil-alt "></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="apxtable_pagination_wrapper">
+                <div class="apxtable_pagelist">
+                    <div class="apxlist_number_page">
+                        <span>Show</span>
+                        <input value="07" type="number" />
+                        <span>Entries</span>
+                    </div>
+                    <div class="pagination_gopage">
+                        <span>Go to Page</span>
+                        <input type="text" value="1" />
+                    </div>
+                </div>
+                <div class="apxtable_pagination">
+                    <!-- <ul>
+                        <li class="prev">Prev</li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li>...</li>
+                        <li><a href="#">16</a></li>
+                        <li><a href="#">17</a></li>
+                        <li><a href="#">18</a></li>
+                        <li class="next">Next</li>
+                    </ul> -->
+                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+
+
+<!-- The Modal -->
+<div class="modal" id="filterby">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Filter By</h4>
+                <div class="filterbt_btnn">
+                    <button class="btnfilter-apply">Apply</button>
+                    <button class="btnfilter-cancel">Cancel</button>
+                </div>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="filterforms_setting">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="apxgroup-filter">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First name" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="apxgroup-filter">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last name" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="apxgroup-filter">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Email Address" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="apxgroup-filter">
+                                <label>Phone Number</label>
+                                <input type="text" placeholder="Phone number" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="apxgroup-filter">
+                                <label>Status</label>
+                                <select>
+                  <option value="">All</option>
+                  <option value="">All-1</option>
+                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div class="modal" id="tabledel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="maintable_delete">
+                    <img src="../../../assets/images/danger.png" alt="danger" />
+                    <p>Are you sure want to delete the data?</p>
+                    <div class="filterbt_btnn btn_deletecard">
+                        <button class="btnfilter-cancel">Yes</button>
+                        <button data-dismiss="modal" class="btnfilter-apply">No</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

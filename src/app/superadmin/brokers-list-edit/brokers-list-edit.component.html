@@ -1,0 +1,84 @@
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark">
+    <i class="fas fa-bars"></i>
+  </a>
+  <app-sidebar></app-sidebar>
+  <!-- sidebar-wrapper  -->
+  <main class="page-content">
+    <app-header headerMainTitle="Manage Users"></app-header>
+    <div class="apexpage-titletop">
+      <div class="apxpage-title_wrap">
+        <h2>add / edit brokers</h2>
+        <button class="btn_to_btitle">back</button>
+      </div>
+    </div>
+    <form (ngSubmit)=addEdit.form.valid&&_create_broker() #addEdit="ngForm">
+      <div class="pagecontent_wrapper">
+        <div class="apex-white_wrap">
+          <div class="apex-title-lilblue">
+            <h3>basic details</h3>
+          </div>
+  
+          <div class="apexforms-group">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>First Name</label>
+                  <input type="text" name="firstName" [(ngModel)]="addBroker.firstName" #firstName="ngModel"  placeholder="First Name" value="" />
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Last Name</label>
+                  <input type="text" name="lastName" [(ngModel)]="addBroker.lastName" #lastName="ngModel"   placeholder="Last Name" value="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apexforms-group">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Email Address</label>
+                  <input type="email" name="emailId"  [(ngModel)]="addBroker.emailId" #emailId="ngModel" placeholder="Email Address" value=""  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Phone Number</label>
+                  <input type="text" name="phone" [(ngModel)]="addBroker.phone" #phone="ngModel" placeholder="Phone Number" value=""  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apexforms-group">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Title</label>
+                  <select name="title" id="title"  [(ngModel)]="addBroker.title" #title="ngModel">
+                    <option value="manager">manager</option>
+                    <option value="Title-1">Title-1</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Status</label>
+                  <select name="active" id="active" [(ngModel)]="addBroker.active" #active="ngModel">
+                    <option [value]=true>Active</option>
+                    <option [value]=false>Inactive</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apxbtn_finalcenter">
+            <button class="btn_grey">Cancel</button>
+            <button class="btn_dblue">save</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+</div>

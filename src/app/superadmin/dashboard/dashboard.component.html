@@ -1,0 +1,129 @@
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark">
+        <i class="fas fa-bars"></i>
+    </a>
+    <app-sidebar></app-sidebar>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+        <app-header headerMainTitle="Dashboard">
+        </app-header>
+        <div class="container-fluid">
+            <div class="content_wrapper">
+                <div class="lead_list">
+                    <h1>USERS STATS</h1>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="user_stats_wrap">
+                                <div class="user_progress">
+                                    <div class="radialProgressBar progress-managers">
+                                        <div class="overlay">50</div>
+                                    </div>
+                                </div>
+                                <div class="user_title">
+                                    <p>No. of Total</p>
+                                    <h2>Managers</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="user_stats_wrap">
+                                <div class="user_progress">
+                                    <div class="radialProgressBar progress-broker">
+                                        <div class="overlay">50</div>
+                                    </div>
+                                </div>
+                                <div class="user_title">
+                                    <p>No. of Total</p>
+                                    <h2>Brokers</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="user_stats_wrap">
+                                <div class="user_progress">
+                                    <div class="radialProgressBar progress-agent">
+                                        <div class="overlay">50</div>
+                                    </div>
+                                </div>
+                                <div class="user_title">
+                                    <p>No. of Total</p>
+                                    <h2>Agents</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="user_stats_wrap">
+                                <div class="user_progress">
+                                    <div class="radialProgressBar progress-homeowner">
+                                        <div class="overlay">50</div>
+                                    </div>
+                                </div>
+                                <div class="user_title">
+                                    <p>No. of Total</p>
+                                    <h2>Homeowner</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="user_stats_wrap">
+                                <div class="user_progress">
+                                    <div class="radialProgressBar progress-negotiators">
+                                        <div class="overlay">50</div>
+                                    </div>
+                                </div>
+                                <div class="user_title">
+                                    <p>No. of Total</p>
+                                    <h2>Negotiators</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="user_stats_wrap">
+                                <div class="user_progress">
+                                    <div class="radialProgressBar progress-asst-neg">
+                                        <div class="overlay">50</div>
+                                    </div>
+                                </div>
+                                <div class="user_title">
+                                    <p>No. of Total</p>
+                                    <h2>Asst. Negotiators</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="user_stats_wrap">
+                                <div class="user_progress">
+                                    <div class="radialProgressBar progress-closer">
+                                        <div class="overlay">50</div>
+                                    </div>
+                                </div>
+                                <div class="user_title">
+                                    <p>No. of Total</p>
+                                    <h2>Closer</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lead_list">
+                    <h1>Recent Lead <a href="#">View All</a></h1>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6" *ngFor="let RecentLeadList of RecentLead">
+                            <div class="lead_wrap">
+                                <div class="lead_title">
+                                    <img src="../../../assets/images/recent_lead.png" alt="" />
+                                    <h4>{{RecentLeadList.LeadTitle}}</h4>
+                                </div>
+                                <p>{{RecentLeadList.LeadDescription}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>

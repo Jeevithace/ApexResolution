@@ -1,0 +1,123 @@
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark">
+    <i class="fas fa-bars"></i>
+  </a>
+  <app-sidebar></app-sidebar>
+  <!-- sidebar-wrapper  -->
+  <main class="page-content">
+    <app-header headerMainTitle="Manage Users">
+    </app-header>
+    <div class="pagecontent_wrapper">
+      <div class="apex-white_wrap">
+        <div class="apex-title-lilblue">
+          <h3>Profile Picture</h3>
+        </div>
+        <div class="manage_photos">
+          <div class="manager_photos_images">
+            <img src="../../../assets/images/profile_pic.png" alt="pic" />
+          </div>
+          <div class="manager_photos_content">
+            <h4>Denzel Washington</h4>
+            <span>Super Admin</span>
+            <div class="manager_img_updates">
+              <button class="btn_removepic">remove photo</button>
+              <button class="btn_uploadpic">Upload picture</button>
+            </div>
+          </div>
+        </div>
+        <div class="apex-title-lilblue">
+          <h3>basic details </h3>
+        </div>
+        <div class="apexforms-wraps">
+          <div class="apexforms-group">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>First Name</label>
+                  <input type="text" placeholder="First Name" value="Denzel" name="first name" />
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="Last Name" value="Washington" name="last name" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apexforms-group">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Email Address</label>
+                  <input type="email" placeholder="Email Address" value="denzelwashington@apex.com" name="email" />
+                  <span class="forms_verified">Verified</span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Phone Number</label>
+                  <input type="text" placeholder="Phone Number" value="+1 897 896 6398" name="phone" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apexforms-group">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="apexinput-froms">
+                  <label>Date of Birth</label>
+                  <div class="apexinput-dateform">
+                    <div class="form-group">
+                      <input type="text" placeholder="Datepicker" class="form-control" bsDatepicker>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="apxbtn_finalcenter">
+          <button class="btn_grey">Cancel</button>
+          <button class="btn_dblue">update</button>
+        </div>
+      </div>
+      <div class="apex-white_wrap">
+        <div class="apex-title-lilblue">
+          <h3>Change Password</h3>
+        </div>
+        <div class="apexforms-group">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="apexinput-froms">
+                <label>Current Password</label>
+                <input type="password" placeholder="Current Password" value="denzelwashington" name="password" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apexforms-group">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="apexinput-froms">
+                <label>Create Password</label>
+                <input type="password" placeholder="New Password" value="" name="password" />
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="apexinput-froms">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" value="" name="password" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apxbtn_finalcenter">
+          <button class="btn_grey">Cancel</button>
+          <button class="btn_dblue">update</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

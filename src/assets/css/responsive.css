@@ -1,0 +1,152 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 991px) {
+  .authdescribe_wrap {
+    display: none;
+  }
+
+  .apx-responsive table {
+    white-space: nowrap;
+  }
+
+  .authforms_wrap {
+    width: 100%;
+
+  }
+
+  /* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  /* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+  .authforms_guards>h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .apexinput-froms label {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+  }
+
+  .apexinput-froms {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .apexforms-group {
+    margin-bottom: 0;
+  }
+
+  .forms_verified {
+    text-align: left !important;
+    width: 100%;
+    float: left;
+  }
+
+  .filter_setting_forms {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .apex-white_wrap {
+    padding: 12px;
+  }
+
+  #filterby .modal-header {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .filterbt_btnn {
+    padding: 7px 0;
+  }
+
+  .apxtable_pagination_wrapper {
+    flex-direction: column;
+  }
+
+  .apxtable_pagination ul li,
+  .apxtable_pagination ul li a {
+    font-size: 14px !important;
+  }
+
+  .logtext h2 {
+    margin: 5px 0 10px 0;
+  }
+
+  .notification_list {
+    max-width: 87%;
+  }
+
+  .page-wrapper .page-content {
+    padding-top: 130px !important;
+  }
+
+  .logtext h2 {
+    margin: 5px 0 10px;
+    text-align: center;
+  }
+
+  .apxtable_pagelist {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination_gopage {
+    margin: 10px 0;
+  }
+
+  .apxtable_pagination ul li {
+    margin-left: 6px;
+  }
+
+  li.prev,
+  li.next {
+    margin-top: 2px;
+  }
+
+  .filterapx_wrap {
+    flex-direction: column;
+  }
+
+  .filter_setting_forms h3 {
+    width: 100%;
+    float: left;
+    margin: 0 0 10px;
+  }
+
+  .apxsilsetting_group {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+
+  .apxtable_grid_head {
+    padding: 12px;
+    flex-direction: column;
+  }
+
+  .apxtable_headbtn {
+    flex-wrap: wrap;
+  }
+
+  .apxtable_headbtn button {
+    margin: 8px 10px;
+  }
+
+  .apxtable_grid_head h2 {
+    font-size: 14px;
+  }
+
+  /* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 991px) {
+  /* Styles */
+}

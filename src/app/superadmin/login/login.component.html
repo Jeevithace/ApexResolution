@@ -1,0 +1,48 @@
+<div class="authguard_wrapper">
+  <div class="authdescribe_wrap">
+    <h2>Going Above and Beyond To Find Your Next Home</h2>
+    <img src="../../../assets/images/auth_bgm.png" alt="bgm" />
+  </div>
+  <div class="authforms_wrap">
+    <div class="authforms_guards">
+      <img src="../../../assets/images/logo.png" alt="logo" />
+      <h3>super Admin Login</h3>
+      <span>Login to continue the application</span>
+      <form name="login" (ngSubmit)=Login.form.valid&&_login_func() #Login="ngForm" novalidate>
+        <div class="apex_auth_forms apexfocus_form">
+          <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <div class="apexauth_layer">
+            <label>Email</label>
+            <input type="email" name="email" [(ngModel)]="loginData.email"  #email="ngModel" 
+            [ngClass]="{'is-invalid': Login.submitted && email.invalid}" required>         
+          <div *ngIf="Login.submitted && email.invalid" class="invalid-feedback">
+            <!-- <div *ngIf=" email.errors?.required">Email is required</div> -->
+            <div *ngIf="!email.valid && email.touched">Email must be a valid email address</div>
+        </div>
+        
+      </div>
+        </div>
+        <div class="apex_auth_forms">
+          <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+          <div class="apexauth_layer">
+            <label>Password</label>
+            <input  type="password" name="password" [(ngModel)]="loginData.password" #password="ngModel"
+            [ngClass]="{'is-invalid': Login.submitted && password.invalid}" required>
+            <div *ngIf="Login.submitted && password.invalid" class="invalid-feedback">
+              <div *ngIf=" password.errors?.required">password is required</div>
+          </div>
+          </div>
+          
+        </div>
+        <div class="apex_auth_frgt_pswd">
+          <a routerLink="/forgot-password">
+            Forgot Password?
+          </a>
+        </div>
+        <div class="apex_auth_submitprocess">
+          <button class="btn-apex-primary">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

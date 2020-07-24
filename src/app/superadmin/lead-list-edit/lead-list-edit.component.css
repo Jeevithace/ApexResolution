@@ -1,0 +1,73 @@
+.lead-group .row {
+    margin: 0px 19px;
+}
+
+.lead-group .apexinput-froms {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.lead-group .apexinput-froms label {
+    margin-bottom: 8px;
+}
+
+.apexforms-group.lead-group {
+    margin-bottom: 0px;
+}
+
+.lead-group .apexinput-froms textarea {
+    width: 300px;
+    max-width: 100%;
+    height: 130px;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.lg-l {
+    margin: 0px !important;
+}
+
+.lg-l>div {
+    padding-left: 0px;
+}
+
+.prev_assigned_detail {
+    background: #F4F8FA;
+    border-radius: 5px;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.prev_assigned_detail h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 19px;
+}
+
+.prev_assigned_detail .apexinput-froms span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.prev-lead-group {
+    margin-bottom: 20px;
+}
+
+.apexforms-group.lead-group.prev-lead-group .row {
+    margin: 0px 6px;
+}
+
+.apexforms-group.lead-group.prev-lead-group {
+    margin-bottom: 30px;
+}
